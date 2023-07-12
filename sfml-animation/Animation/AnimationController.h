@@ -32,5 +32,5 @@ public:
 	void Stop();
 
 	void SetFrame(const AnimationFrame& frame);
-	std::string GetCurrentClipId();
+	std::string GetCurrentClipId() const;
 };

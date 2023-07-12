@@ -5,10 +5,12 @@
 #include "ResourceMgr.h"
 #include "GameObject.h"
 #include "Player.h"
+#include "PlayerTest.h"
 #include "Framework.h"
 
 SceneGame::SceneGame() : Scene(SceneId::Game)
 {
+	resources.push_back(std::make_tuple(ResourceTypes::Texture, "graphics/sprite_sheet.png"));
 	resources.push_back(std::make_tuple(ResourceTypes::Texture, "graphics/RubySheet.png"));
 }
 
@@ -17,6 +19,7 @@ void SceneGame::Init()
 	Release();
 
 	player = (Player*)AddGo(new Player());
+	//playerTest = (PlayerTest*)AddGo(new PlayerTest());
 	for (auto go : gameObjects)
 	{
 		go->Init();

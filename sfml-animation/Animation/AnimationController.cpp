@@ -99,7 +99,9 @@ void AnimationController::SetFrame(const AnimationFrame& frame)
 	target->setTextureRect(frame.texCoord);
 }
 
-std::string AnimationController::GetCurrentClipId()
+std::string AnimationController::GetCurrentClipId() const
 {
+	if (currentClip == nullptr)
+		return "";
 	return currentClip->id;
 }

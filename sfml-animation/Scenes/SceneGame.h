@@ -2,11 +2,13 @@
 #include "Scene.h"
 
 class Player;
+class PlayerTest;
 
 class SceneGame : public Scene
 {
 protected:
 	Player* player;
+	PlayerTest* playerTest;
 public:
 	SceneGame();
 	virtual ~SceneGame() override = default;
