@@ -10,7 +10,8 @@ protected:
 
 	SceneId sceneId;
 
-	std::vector<std::tuple<ResourceTypes, std::string>> resources;
+	//std::vector<std::tuple<ResourceTypes, std::string>> resources;
+
 
 	std::list<GameObject*> gameObjects; 
 	std::list<GameObject*> removeGameObjects;
@@ -21,8 +22,11 @@ protected:
 	sf::RenderWindow& window;
 
 public:
+
 	Scene(SceneId id = SceneId::None);
 	virtual ~Scene();
+
+	std::string resourceListPath;
 
 	GameObject* FindGo(const std::string& name);
 	void FindGos(std::list<GameObject*>& list, const std::string& name);

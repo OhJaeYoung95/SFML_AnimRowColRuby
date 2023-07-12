@@ -3,12 +3,16 @@
 
 class Player;
 class PlayerTest;
+class UIButton;
 
 class SceneGame : public Scene
 {
 protected:
 	Player* player;
 	PlayerTest* playerTest;
+
+	UIButton* uiButton;
+
 public:
 	SceneGame();
 	virtual ~SceneGame() override = default;

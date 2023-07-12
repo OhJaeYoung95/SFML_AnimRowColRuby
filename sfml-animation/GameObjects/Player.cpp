@@ -96,12 +96,12 @@ void Player::Init()
 	}
 
 	// 애니메이션 파일 입출력
-	RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/RowIdle.csv");
-	RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/UpIdle.csv");
-	RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/DownIdle.csv");
-	RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/RowMove.csv");
-	RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/UpMove.csv");
-	RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/DownMove.csv");
+	//RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/RowIdle.csv");
+	//RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/UpIdle.csv");
+	//RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/DownIdle.csv");
+	//RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/RowMove.csv");
+	//RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/UpMove.csv");
+	//RESOURCE_MGR.Load(ResourceTypes::AnimationClip, "animations/DownMove.csv");
 
 	animation.AddClip(*RESOURCE_MGR.GetAnimationClip("animations/RowIdle.csv"));
 	animation.AddClip(*RESOURCE_MGR.GetAnimationClip("animations/UpIdle.csv"));
